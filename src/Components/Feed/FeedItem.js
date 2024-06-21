@@ -1,18 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
-import dynamic from "next/dynamic";
-import React, { useEffect, useState, useCallback, useRef } from "react";
-import { useRouter } from "next/router";
-import { Video } from "./Video";
-import FeedDescription from "./FeedDescription";
+import React from "react";
 
 export const FeedItem = ({ feed }) => {
   const { avatar_url, login } = feed;
 
   return (
     <>
-
-
       <div className="flex justify-center w-[40%] p-4 ">
         <div className="bg-white shadow-lg rounded-lg border border-gray-200">
           <div className="flex justify-center mb-4 p-4">
