@@ -7,7 +7,6 @@ import { Video } from "./Video";
 import FeedDescription from "./FeedDescription";
 
 export const FeedItem = ({ feed }) => {
-  console.log("feed", feed);
   const { avatar_url, login } = feed;
 
   return (
