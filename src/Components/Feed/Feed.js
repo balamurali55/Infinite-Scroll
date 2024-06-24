@@ -14,7 +14,7 @@ export const Feed = ({
   });
 
   return (
-    <div className="">
+    <div className="w-full">
       <div className="text-center mt-8">
         <div className="text-3xl font-bold ">
           Infinite scroll
