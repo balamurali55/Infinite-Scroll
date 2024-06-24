@@ -20,8 +20,4 @@ body {
   color: black;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+

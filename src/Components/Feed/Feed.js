@@ -15,17 +15,14 @@ export const Feed = ({
 
   return (
     <div className="w-full">
-      <div className="text-center mt-8">
-        <div className="text-3xl font-bold ">
+      <div className="text-center mt-8" style={{ textAlign: "center" }}>
+        <div className="text-3xl font-bold" style={{ fontWeight: "bold" }}>
           Infinite scroll
         </div>
       </div>
 
       {feeds.map((feed, index) => (
-        <div
-          className="flex justify-center"
-          key={`${feed.id}-${index}`}
-        >
+        <div className="flex justify-center" key={`${feed.id}-${index}`}>
           {lastFeedIndex === index ? (
             <IntersectionComponent
               onVisible={onVisible}
@@ -39,11 +36,7 @@ export const Feed = ({
               />
             </IntersectionComponent>
           ) : (
-            <FeedItem
-              feed={feed}
-              setFeedData={setFeedData}
-              idxPost={index}
-            />
+            <FeedItem feed={feed} setFeedData={setFeedData} idxPost={index} />
           )}
         </div>
       ))}
