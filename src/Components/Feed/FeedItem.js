@@ -5,7 +5,15 @@ export const FeedItem = ({ feed }) => {
 
   return (
     <>
-      <div className="flex justify-center w-[50%] p-4" style={{width:"50%"}}>
+      <div
+        className="flex justify-center w-[50%] p-4"
+        style={{
+          width: "50%",
+          padding: "10px",
+          boxShadow: "inherit",
+          margin: "5px",
+        }}
+      >
         <div className="bg-white shadow-lg rounded-lg border border-gray-200">
           <div className="flex justify-center mb-4 p-4">
             <img
